@@ -1,0 +1,27 @@
+PS C:\Faculdade\MicroServiceDDD\AT> docker compose up --build -d
+Container eureka-server Started
+Container config-server Started
+Container config-server Healthy
+Container eureka-server Healthy
+Container vendas-service Started
+Container auth-service Started
+Container fornecedores-service Started
+Container produtos-service Started
+Container clientes-service Started
+Container fornecedores-service Healthy
+Container clientes-service Healthy
+Container produtos-service Healthy
+Container auth-service Healthy
+Container vendas-service Healthy
+Container gateway Started
+
+PS C:\Faculdade\MicroServiceDDD\AT> docker compose ps
+NAME                   STATUS                        PORTS
+auth-service           Up About a minute (healthy)   0.0.0.0:8086->8086/tcp
+clientes-service       Up About a minute (healthy)   0.0.0.0:8083->8083/tcp
+config-server          Up About a minute (healthy)   0.0.0.0:8888->8888/tcp
+eureka-server          Up About a minute (healthy)   0.0.0.0:8761->8761/tcp
+fornecedores-service   Up About a minute (healthy)   0.0.0.0:8084->8084/tcp
+gateway                Up 27 seconds                 0.0.0.0:8085->8085/tcp
+produtos-service       Up About a minute (healthy)   0.0.0.0:8081->8081/tcp
+vendas-service         Up About a minute (healthy)   0.0.0.0:8082->8082/tcp

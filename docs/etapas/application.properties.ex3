@@ -1,0 +1,27 @@
+# Configuracao local do fornecedores-service, ainda sem Config Server.
+# No Exercicio 7 tudo que e ambiente (porta, H2 e Eureka) sai daqui e vai
+# para config-repo/fornecedores-service.properties, e este arquivo fica
+# so com o nome da aplicacao e o endereco do Config Server.
+spring.application.name=fornecedores-service
+
+server.port=8084
+
+# H2 em memoria
+spring.datasource.url=jdbc:h2:mem:fornecedoresdb
+spring.datasource.driver-class-name=org.h2.Driver
+spring.datasource.username=sa
+spring.datasource.password=
+
+spring.jpa.database-platform=org.hibernate.dialect.H2Dialect
+spring.jpa.hibernate.ddl-auto=update
+spring.jpa.show-sql=true
+
+# Console web do H2, acessivel em http://localhost:8084/h2-console
+spring.h2.console.enabled=true
+spring.h2.console.path=/h2-console
+
+# Registro no Eureka
+eureka.client.service-url.defaultZone=http://localhost:8761/eureka/
+eureka.client.fetch-registry=true
+eureka.client.register-with-eureka=true
+eureka.instance.prefer-ip-address=true

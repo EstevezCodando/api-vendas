@@ -1,0 +1,20 @@
+PS C:\Faculdade\MicroServiceDDD\AT> # o gateway acha o servico pelo nome registrado no Eureka, sem rota manual
+PS C:\Faculdade\MicroServiceDDD\AT> curl.exe -i -s http://localhost:8085/fornecedores-service/fornecedores
+HTTP/1.1 200 OK
+transfer-encoding: chunked
+Content-Type: application/json
+Date: Tue, 22 Sep 2026 00:06:06 GMT
+
+[
+    {
+        "id": 1,
+        "nome": "Tech Distribuidora LTDA",
+        "cnpj": "12.345.678/0001-90"
+    },
+    {
+        "id": 2,
+        "nome": "Info Supply Comercio",
+        "cnpj": "23.456.789/0001-01"
+    },
+    ... (os cinco fornecedores)
+]
