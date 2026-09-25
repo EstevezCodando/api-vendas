@@ -1,6 +1,6 @@
 # Spring Microservices — AT
 
-**Aluno:** Jean Michael Estevez Alvarez — **Matrícula:**
+**Aluno:** Jean Michael Estevez Alvarez
 
 Microsserviço acrescentado nesta atividade: **fornecedores-service**, na porta **8084**.
 
