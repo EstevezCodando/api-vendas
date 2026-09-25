@@ -1,0 +1,13 @@
+PS C:\Faculdade\MicroServiceDDD\AT> curl.exe -i -s http://localhost:8084/fornecedores/2
+HTTP/1.1 200 
+Content-Type: application/json
+Transfer-Encoding: chunked
+Date: Tue, 22 Sep 2026 00:02:18 GMT
+
+{"id":2,"nome":"Info Supply Comercio","cnpj":"23.456.789/0001-01"}
+
+PS C:\Faculdade\MicroServiceDDD\AT> curl.exe -i -s http://localhost:8084/fornecedores/99
+HTTP/1.1 404 
+Content-Length: 0
+Date: Tue, 22 Sep 2026 00:02:19 GMT
+
